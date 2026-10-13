@@ -1,0 +1,23 @@
+[theme]
+base = "dark"
+primaryColor = "#2A6B5C"
+backgroundColor = "#172321"
+secondaryBackgroundColor = "#263B34"
+textColor = "#E7E2D6"
+borderColor = "#3E564C"
+linkColor = "#8CCFC0"
+codeTextColor = "#E7E2D6"
+codeBackgroundColor = "#263B34"
+redColor = "#E99A88"
+orangeColor = "#D6C5A5"
+greenColor = "#8CCFC0"
+blueColor = "#9BC7BB"
+font = "serif"
+chartCategoricalColors = ["#8CCFC0", "#D6C5A5", "#E99A88", "#B6C9A8", "#9BC7BB", "#E7E2D6"]
+
+[server]
+headless = true
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
