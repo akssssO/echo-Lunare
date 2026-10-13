@@ -72,9 +72,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Open the local URL Streamlit prints (usually `http://localhost:8501`). No API key is required. The app does not call external services at runtime.
-
-Sidebar: pick a preset, set the seed and horizon, then press **Run simulation**. **Reset scenario** restores the Nagpur–Delhi delay demo. **Compare interventions** opens the futures page for the last run. Detail sliders live in Disruption lab and apply on the next run.
 
 ## Tests
 
@@ -84,26 +81,6 @@ pytest -q
 
 The tests cover deterministic demand, graph connectivity, nonnegative inventory, stock conservation, delivery timing, supplier and route limits, intervention feasibility, stable risk scores, undefined metrics, and a full replay of the held-out suite.
 
-## Screenshots
-
-Capture these after a local run. Do not present them as a live deployment.
-
-1. Executive overview with the default delay scenario.
-2. Supply network, including the accessible table under the chart.
-3. Early-warning engine on a morning with alerts.
-4. Parallel futures, showing the three policies side by side.
-5. Evaluation after **Run held-out evaluation**.
-
-## Streamlit Community Cloud
-
-These steps are manual. This repository does not record a deployed URL.
-
-1. Push the project to a public GitHub repository.
-2. Sign in at [share.streamlit.io](https://share.streamlit.io).
-3. Create an app from that repository. Main file: `app.py`. Requirements file: `requirements.txt`.
-4. Use Python 3.12 if the host asks for a version (`runtime.txt` in this repo requests 3.12).
-5. Deploy. The app has no secrets and no outbound API calls.
-6. Paste the real app URL into the submission only after the deploy succeeds.
 
 ## Limitations
 
